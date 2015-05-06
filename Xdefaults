@@ -1,0 +1,101 @@
+urxvt*scrollBar: false
+urxvt*geometry: 80x14
+urxvt*loginShell: true
+urxvt*termName: rxvt-256color
+urxvt*cursorColor: #a488d9
+
+URxvt.perl-ext-common: default,matcher
+URxvt.urlLauncher: /usr/bin/firefox
+URxvt.matcher.button: 1
+
+!URxvt.transparent: true
+!URxvt.shading: 80           
+
+urxvt*font: -misc-fixed-medium-*-normal-*-9-*-*-*-*-*-*-*
+urxvt*boldFont: -misc-fixed-medium-*-normal-*-9-*-*-*-*-*-*-*
+urxvt*italicFont: -misc-fixed-medium-*-normal-*-9-*-*-*-*-*-*-*
+urxvt*boldItalicFont: -misc-fixed-medium-*-normal-*-9-*-*-*-*-*-*-*
+
+
+*background: #101010
+*foreground: #b2b2b2
+
+!#include "/home/n0tch2k/.config/colors/aimeta.colors"
+!#include "/home/n0tch2k/.config/colors/astromouse.colors"
+!#include "/home/n0tch2k/.config/colors/darkastro.colors"
+!#include "/home/n0tch2k/.config/colors/awesome.colors"
+!#include "/home/n0tch2k/.config/colors/cloud.colors"
+!#include "/home/n0tch2k/.config/colors/cottonmouse.colors"
+!#include "/home/n0tch2k/.config/colors/crunch.colors"
+!#include "/home/n0tch2k/.config/colors/dipilibupap.colors"
+!#include "/home/n0tch2k/.config/colors/doomcide.colors"
+!#include "/home/n0tch2k/.config/colors/drot.colors"
+!#include "/home/n0tch2k/.config/colors/grey.colors"
+!#include "/home/n0tch2k/.config/colors/ishikawa.colors"
+!#include "/home/n0tch2k/.config/colors/jessicamouse.colors"
+!#include "/home/n0tch2k/.config/colors/jwrdark.colors"
+!#include "/home/n0tch2k/.config/colors/oblivious.colors"
+!#include "/home/n0tch2k/.config/colors/mikado.colors"
+!#include "/home/n0tch2k/.config/colors/moca.colors"
+!#include "/home/n0tch2k/.config/colors/murugan.colors"
+!#include "/home/n0tch2k/.config/colors/pink.colors"
+!#include "/home/n0tch2k/.config/colors/pinkmouse.colors"
+!#include "/home/n0tch2k/.config/colors/sepia.colors"
+#include "/home/n0tch2k/.config/colors/taters.colors"
+!#include "/home/n0tch2k/.config/colors/thayer.colors"
+!#include "/home/n0tch2k/.config/colors/oblivious.colors"
+
+xclock*Foreground:      #5E7175
+xclock*Background:      #090909
+xclock*Border:          #3f3f3f
+xclock*Highlight:       cornflower blue
+xclock*Hands:           #151515
+xclock*Mode:            analog
+
+XFontSel*sampleText.background:       TEXTBG
+XFontSel*menu*showUnselectable:       false
+XFontSel*MenuButton.shadowWidth:      0
+XFontSel*Toggle*ToggleStyle:          check
+XFontSel*MenuButton*Justify:          left
+XFontSel*MenuButton*MenuButtonStyle:  select
+
+.xfontsel.pane.commandBox.quitButton.background:  #252525
+.xfontsel.pane.commandBox.quitButton.foreground:  snow
+.xfontsel.pane.commandBox.ownButton.background:   purple
+.xfontsel.pane.commandBox.ownButton.foreground:   snow
+.xfontsel.pane.commandBox.countLabel.background:  snow
+.xfontsel.pane.viewPort.sampleText.background:    #252525
+.xfontsel.pane.viewPort.sampleText.foreground:    snow
+.xfontsel.pane.fieldBox.field0.background:        #252525
+.xfontsel.pane.fieldBox.field0.foreground:        snow
+.xfontsel.pane.fieldBox.field1.background:        #252525
+.xfontsel.pane.fieldBox.field1.foreground:        snow
+.xfontsel.pane.fieldBox.field2.background:        #252525
+.xfontsel.pane.fieldBox.field2.foreground:        snow
+.xfontsel.pane.fieldBox.field3.background:        #252525
+.xfontsel.pane.fieldBox.field3.foreground:        snow
+.xfontsel.pane.fieldBox.field4.background:        #252525
+.xfontsel.pane.fieldBox.field4.foreground:        snow
+.xfontsel.pane.fieldBox.field5.background:        #252525
+.xfontsel.pane.fieldBox.field5.foreground:        snow
+.xfontsel.pane.fieldBox.field6.background:        #252525
+.xfontsel.pane.fieldBox.field6.foreground:        snow
+.xfontsel.pane.fieldBox.field7.background:        #252525
+.xfontsel.pane.fieldBox.field7.foreground:        snow
+.xfontsel.pane.fieldBox.field8.background:        #252525
+.xfontsel.pane.fieldBox.field8.foreground:        snow
+.xfontsel.pane.fieldBox.field9.background:        #252525
+.xfontsel.pane.fieldBox.field9.foreground:        snow
+.xfontsel.pane.fieldBox.field10.background:       #252525
+.xfontsel.pane.fieldBox.field10.foreground:       snow
+.xfontsel.pane.fieldBox.field11.background:       #252525
+.xfontsel.pane.fieldBox.field11.foreground:       snow
+.xfontsel.pane.fieldBox.field12.background:       #252525
+.xfontsel.pane.fieldBox.field12.foreground:       snow
+.xfontsel.pane.fieldBox.field13.background:       #252525
+.xfontsel.pane.fieldBox.field13.foreground:       snow
+.xfontsel.pane.fieldBox*foreground:               #999999
+.xfontsel.pane.fieldBox.MenuButton.borderWidth:   1
+.xfontsel.pane.fieldBox.MenuButton.internalHeight:1
+.xfontsel.pane.fieldBox.MenuButton.internalWidth: 2
+.xfontsel.pane.fieldBox.MenuButton.shapeStyle:    rectangle
