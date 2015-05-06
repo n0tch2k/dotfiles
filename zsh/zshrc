@@ -1,0 +1,98 @@
+########################
+# /home/n0tch2k/.zshrc #
+########################
+
+ZSHDIR="/home/n0tch2k/.config/zsh/opts"
+
+. $ZSHDIR/options
+. $ZSHDIR/exports
+. $ZSHDIR/aliases
+. $ZSHDIR/functions
+
+autoload -U compinit
+compinit
+setopt nobeep
+setopt append_history
+
+PROMPT=$'%{\e[0;35m%}[%{\e[0m%}%{\e[0;36m%}%~%{\e[0m%}%{\e[0;35m%}]%{\e[0m%} '
+
+HISTSIZE=100
+SAVEHIST=100
+HISTFILE=~/.config/zsh/history
+
+eval $(dircolors -b ${HOME}/.dir_colors)
+
+bindkey "^[[2~" overwrite-mode
+bindkey "^[[3~" delete-char
+bindkey "^[[5~" up-line-or-search
+bindkey "^[[6~" down-line-or-search
+bindkey "^[[1~" beginning-of-line
+bindkey "^[[7~" beginning-of-line
+bindkey "^[[4~" end-of-line
+bindkey "^[[8~" end-of-line
+bindkey "^?" backward-delete-char
+bindkey '^R' history-incremental-search-backward
+
+zstyle ':completion:*:default' list-prompt '%S%M matches%s'
+zstyle ':completion:*:*:kill:*' menu yes select
+zstyle ':completion:*:*:kill:*:processes' command 'ps haxopid:5,user:4,%cpu:4,ni:2,stat:3,etime:8,args'
+zstyle ':completion:*:*:kill:*:processes' list-colors '=(#b) #([0-9]#)*=0=01;31'
+zstyle ':completion:*:kill:*' force-list always
+
+compdef _pacman pacman-color=pacman
+
+if [ "$TERM" = "linux" ]; then
+    echo -en "\e]P0050505"
+    echo -en "\e]P8555753"
+    echo -en "\e]P19c8093"
+    echo -en "\e]P9ffadcc"
+    echo -en "\e]P29ed3d7"
+    echo -en "\e]PA67d797"
+    echo -en "\e]P3ccc9a5"
+    echo -en "\e]PBc4c497"
+    echo -en "\e]P43f4f60"
+    echo -en "\e]PC98a7b6"
+    echo -en "\e]P5a488d9"
+    echo -en "\e]PDb7a7bc"
+    echo -en "\e]P68d9fa6"
+    echo -en "\e]PEb8ddea"
+    echo -en "\e]P7665c64"
+    echo -en "\e]PF787a76"
+    clear #for background artifacting
+fi
+
+source ~/.config/zsh/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+
+  # override some colors:
+  ZSH_HIGHLIGHT_STYLES[default]='none'
+  ZSH_HIGHLIGHT_STYLES[unknown-token]='fg=red,bold,underline'
+  ZSH_HIGHLIGHT_STYLES[reserved-word]='fg=green'
+  ZSH_HIGHLIGHT_STYLES[alias]='fg=magenta'
+  ZSH_HIGHLIGHT_STYLES[builtin]='fg=magenta,bold'
+  ZSH_HIGHLIGHT_STYLES[function]='fg=magenta'
+  ZSH_HIGHLIGHT_STYLES[command]='fg=magenta,bold'
+  ZSH_HIGHLIGHT_STYLES[hashed-command]='fg=red,bold,standout'
+  ZSH_HIGHLIGHT_STYLES[path]='fg=white,underline'
+  ZSH_HIGHLIGHT_STYLES[globbing]='fg=white,bold'
+  ZSH_HIGHLIGHT_STYLES[history-expansion]='fg=green'
+  ZSH_HIGHLIGHT_STYLES[single-hyphen-option]='fg=blue'
+  ZSH_HIGHLIGHT_STYLES[double-hyphen-option]='fg=blue'
+  ZSH_HIGHLIGHT_STYLES[dollar-double-quoted-argument]='fg=red,bold'
+  ZSH_HIGHLIGHT_STYLES[back-double-quoted-argument]='fg=red'
+  ZSH_HIGHLIGHT_STYLES[assign]='fg=green,bold'
+  ZSH_HIGHLIGHT_STYLES[single-quoted-argument]='fg=cyan,bold'
+  ZSH_HIGHLIGHT_STYLES[double-quoted-argument]='fg=cyan'
+
+  # override colors for matching brackets:
+  ZSH_HIGHLIGHT_MATCHING_BRACKETS_STYLES=(
+    'fg=blue,bold'    # Style for first level of imbrication
+    'fg=green,bold'   # Style for second level of imbrication
+    'fg=magenta,bold' # etc... Put as many styles as you wish, or leave
+    'fg=cyan,bold'    # empty to disable brackets matching.
+    'fg=white,bold'
+    'fg=blue'
+    'fg=green'
+    'fg=magenta'
+    'fg=cyan'
+    'fg=white'
+  )
