@@ -1,0 +1,13 @@
+alias ls='ls --color=auto --group-directories-first'
+alias lss='ls -lh --time-style=+ --color=auto --group-directories-first'
+alias grep='grep --color=always'
+alias cal='cal -3'
+alias grep='grep -i'
+alias 107='cd /home/n0tch2k/music/web_fm; mplayer -playlist 1077.m3u | grep StreamTitle'
+alias alsamixer='alsamixer -g'
+alias bb='sudo shutdown -h now'
+alias m='cd /media/HDD3/Movies'
+alias ncmpcpp='/usr/bin/ncmpcpp'
+alias df='df -hT --total --exclude-type=tmpfs'
+alias screencast='ffmpeg -f x11grab -r 30 -s 1680x1050 -i :0.0 -acodec pcm_s16le -vcodec libx264 -vpre lossless_ultrafast -threads 0 output.mkv'
+
